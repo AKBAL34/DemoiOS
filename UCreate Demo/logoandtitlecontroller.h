@@ -1,14 +1,15 @@
 //
-//  modificaLogoSlogan.h
+//  logoandtitlecontroller.h
 //  UCreate Demo
 //
-//  Created by AKBAL34 on 6/9/15.
+//  Created by AKBAL34 on 5/26/15.
 //  Copyright (c) 2015 AKBAL34. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface modificaLogoSlogan : UIViewController
+@interface logoandtitlecontroller : UIViewController
+
 
 - (IBAction)drag: (UIPanGestureRecognizer*) recognizer;
 
@@ -18,7 +19,8 @@
 
 - (IBAction)handleSwipeLeft:(UIGestureRecognizer *)sender;
 
-- (IBAction)alertAction;
+-(IBAction)alertAction;
+
 
 
 @property IBOutlet UILabel * alertLabel;

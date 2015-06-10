@@ -14,6 +14,7 @@
 		48D8A50D1B06B8D80068B074 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D8A50C1B06B8D80068B074 /* Images.xcassets */; };
 		48D8A5101B06B8D80068B074 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D8A50E1B06B8D80068B074 /* LaunchScreen.xib */; };
 		48D8A51C1B06B8D80068B074 /* UCreate_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8A51B1B06B8D80068B074 /* UCreate_DemoTests.m */; };
+		48DB4E271B289933002DA9DA /* logoandtitlecontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DB4E261B289933002DA9DA /* logoandtitlecontroller.m */; };
 		48DFDA4A1B2892900000F9E3 /* solologo.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DFDA491B2892900000F9E3 /* solologo.png */; };
 		48E311911B274826002F1152 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E311901B274826002F1152 /* logo.png */; };
 		48E311931B274C7B002F1152 /* About-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E311921B274C7B002F1152 /* About-50.png */; };
@@ -46,6 +47,8 @@
 		48D8A5151B06B8D80068B074 /* UCreate DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UCreate DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D8A51A1B06B8D80068B074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48D8A51B1B06B8D80068B074 /* UCreate_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCreate_DemoTests.m; sourceTree = "<group>"; };
+		48DB4E251B289933002DA9DA /* logoandtitlecontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logoandtitlecontroller.h; sourceTree = "<group>"; };
+		48DB4E261B289933002DA9DA /* logoandtitlecontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logoandtitlecontroller.m; sourceTree = "<group>"; };
 		48DFDA491B2892900000F9E3 /* solologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solologo.png; sourceTree = "<group>"; };
 		48E311901B274826002F1152 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		48E311921B274C7B002F1152 /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-50.png"; sourceTree = "<group>"; };
@@ -98,6 +101,8 @@
 				48D8A5041B06B8D80068B074 /* AppDelegate.m */,
 				48D8A5061B06B8D80068B074 /* ViewController.h */,
 				48D8A5071B06B8D80068B074 /* ViewController.m */,
+				48DB4E251B289933002DA9DA /* logoandtitlecontroller.h */,
+				48DB4E261B289933002DA9DA /* logoandtitlecontroller.m */,
 				48D8A5091B06B8D80068B074 /* Main.storyboard */,
 				48E311CD1B2752BD002F1152 /* modificaLogoSlogan.h */,
 				48E311CE1B2752BD002F1152 /* modificaLogoSlogan.m */,
@@ -248,6 +253,7 @@
 				48D8A5081B06B8D80068B074 /* ViewController.m in Sources */,
 				48D8A5051B06B8D80068B074 /* AppDelegate.m in Sources */,
 				48D8A5021B06B8D80068B074 /* main.m in Sources */,
+				48DB4E271B289933002DA9DA /* logoandtitlecontroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

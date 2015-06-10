@@ -1,40 +1,62 @@
 //
-//  modificaLogoSlogan.m
+//  logoandtitlecontroller.m
 //  UCreate Demo
 //
-//  Created by AKBAL34 on 6/9/15.
+//  Created by AKBAL34 on 5/26/15.
 //  Copyright (c) 2015 AKBAL34. All rights reserved.
 //
 
-#import "modificaLogoSlogan.h"
+#import "logoandtitlecontroller.h"
 
-@interface modificaLogoSlogan ()
+@interface logoandtitlecontroller ()
 
 @end
 
-@implementation modificaLogoSlogan
+@implementation logoandtitlecontroller
 @synthesize imageView;
 @synthesize logoLabel;
 @synthesize alertLabel;
 @synthesize alertTextField;
 
--(void) viewDidAppear:(BOOL)animated{
-    
-    self.tabBarController.tabBar.hidden=YES;
-    
-}
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   /*
+    UISwipeGestureRecognizer * swipeRight = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeRight:)];
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeRight];
+    
+    UISwipeGestureRecognizer * swipeLeft = [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(handleSwipeLeft::)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeLeft];
+    
+    */
+ 
+   
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)handleSwipeRight:(UIGestureRecognizer *)sender{
+
+
+
+}
+
+
+- (IBAction)handleSwipeLeft:(UIGestureRecognizer *)sender{
+    
+    
+    
+}
+
+
 
 -(IBAction)alertAction{
     
@@ -50,7 +72,7 @@
     alertTextField.keyboardAppearance= UIKeyboardAppearanceAlert;
     
     [testAlert show];
-    
+
     
     
     
@@ -69,12 +91,12 @@
 
 
 - (IBAction)drag:(UIPanGestureRecognizer *)recognizer{
-    
-    
+
+
     CGPoint translation = [recognizer translationInView:self.view];
     recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
     [recognizer setTranslation:CGPointMake(0.0,0.0) inView:self.view];
-    
+
 }
 
 - (IBAction)handlePinch:(UIPinchGestureRecognizer*)sender {
@@ -85,18 +107,18 @@
     
     if (factor>1) {
         imageView.transform= CGAffineTransformMakeScale(
-                                                        
-        lastScaleFactor+ (factor - 1),
-        lastScaleFactor +(factor -1));
+                            
+                            lastScaleFactor+ (factor - 1),
+                            lastScaleFactor +(factor -1));
     }
     else
     {
-        
-        imageView.transform= CGAffineTransformMakeScale(
-                                                        
-        lastScaleFactor*factor,
-        lastScaleFactor*factor);
-        
+    
+    imageView.transform= CGAffineTransformMakeScale(
+                                                    
+                        lastScaleFactor*factor,
+                        lastScaleFactor*factor);
+    
     }
     
     

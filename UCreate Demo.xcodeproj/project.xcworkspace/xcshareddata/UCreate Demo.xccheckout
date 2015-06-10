@@ -7,34 +7,34 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>575533D5-2CA9-429C-B9F5-B6B10370C4B5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>UCreate Demo</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AFDC33299A7FF20B9A2B46AE6B4107F9AE469297</key>
-		<string>https://github.com/AKBAL34/UCreate-Demo-iOS.git</string>
+		<key>DAF3E4D692AAA5B70DA0D2821FB2D1965E903595</key>
+		<string>https://github.com/UCreateGuatemala/DemoiOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UCreate Demo.xcodeproj</string>
+	<string>UCreate Demo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AFDC33299A7FF20B9A2B46AE6B4107F9AE469297</key>
+		<key>DAF3E4D692AAA5B70DA0D2821FB2D1965E903595</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AKBAL34/UCreate-Demo-iOS.git</string>
+	<string>https://github.com/UCreateGuatemala/DemoiOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AFDC33299A7FF20B9A2B46AE6B4107F9AE469297</string>
+	<string>DAF3E4D692AAA5B70DA0D2821FB2D1965E903595</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AFDC33299A7FF20B9A2B46AE6B4107F9AE469297</string>
+			<string>DAF3E4D692AAA5B70DA0D2821FB2D1965E903595</string>
 			<key>IDESourceControlWCCName</key>
-			<string>UCreate%20Demo</string>
+			<string>DemoiOS</string>
 		</dict>
 	</array>
 </dict>
