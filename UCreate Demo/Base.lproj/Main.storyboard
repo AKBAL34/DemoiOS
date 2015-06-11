@@ -36,12 +36,39 @@
                     <view key="view" contentMode="scaleToFill" id="K30-Y8-LYz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contactanos" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1T-LZ-bzM">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="138" y="64" width="99" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Z1T-LZ-bzM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Z1T-LZ-bzM"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8Xp-zY-sGq" appends="YES" id="ajP-qN-ybU"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contactanos" image="Folder-50.png" id="wIJ-gj-rdb"/>
+                    <navigationItem key="navigationItem" id="Yon-Hx-AF5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cH2-UV-mhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="8Xp-zY-sGq"/>
             </objects>
             <point key="canvasLocation" x="263.25" y="624.5"/>
         </scene>
@@ -68,6 +95,7 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="hxh-2n-j7Z"/>
@@ -78,11 +106,20 @@
                                 <include reference="hxh-2n-j7Z"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Z1z-bp-mFY" appends="YES" id="OwY-V9-Zfq"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Acerca de uCreate" image="Bookmark-50.png" id="fj5-DZ-fBq"/>
+                    <navigationItem key="navigationItem" id="iOD-wi-gA4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVJ-pS-7ys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="Z1z-bp-mFY">
+                    <connections>
+                        <segue destination="QVt-ve-rvI" kind="push" id="pJC-r8-bht"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1128.75" y="-101.5"/>
         </scene>
@@ -140,6 +177,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="qXB-yh-EAr"/>
@@ -152,11 +190,15 @@
                                 <include reference="WRe-wT-pEn"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="55Z-r7-b8Z" appends="YES" id="Sme-xn-by5"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="t0u-BJ-J2y"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="55Z-r7-b8Z"/>
             </objects>
             <point key="canvasLocation" x="2129.25" y="-796.5"/>
         </scene>
@@ -279,4 +321,7 @@
         <image name="Folder-50.png" width="50" height="50"/>
         <image name="solologo.png" width="561" height="592"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nJC-O2-1Vf"/>
+    </inferredMetricsTieBreakers>
 </document>

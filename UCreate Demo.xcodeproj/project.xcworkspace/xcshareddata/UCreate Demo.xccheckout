@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>575533D5-2CA9-429C-B9F5-B6B10370C4B5</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>UCreate Demo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>DAF3E4D692AAA5B70DA0D2821FB2D1965E903595</key>
 		<string>https://github.com/UCreateGuatemala/DemoiOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UCreate Demo.xcodeproj/project.xcworkspace</string>
+	<string>UCreate Demo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>DAF3E4D692AAA5B70DA0D2821FB2D1965E903595</key>
