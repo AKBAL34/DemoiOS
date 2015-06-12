@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3An-sE-0n2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -212,14 +213,201 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="34W-T8-gQ7">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ear-nc-vp8" userLabel="StyleView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estilos" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc2-sc-bk4">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="highlightedColor" red="1" green="0.47729539430000001" blue="0.24015853609999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="62" y="323" width="227" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="Sc2-sc-bk4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <mask key="subviews">
+                                        <include reference="Sc2-sc-bk4"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0q1-rZ-Kbg" userLabel="CatalogOptions">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opciones de catalogo" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61C-er-EUf">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="highlightedColor" red="1" green="0.47729539430000001" blue="0.24015853609999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="74" y="323" width="227" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="61C-er-EUf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <mask key="subviews">
+                                        <include reference="61C-er-EUf"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZY-sR-ck4" userLabel="ProductsView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Productos" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="max-9N-dnr">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="highlightedColor" red="1" green="0.47729539430000001" blue="0.24015853609999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="74" y="323" width="227" height="21"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="max-9N-dnr"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <mask key="subviews">
+                                        <include reference="max-9N-dnr"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YN7-z7-umk">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="6O5-42-b8m"/>
+                                    <constraint firstAttribute="height" constant="28" id="7PI-TZ-Ylr"/>
+                                    <constraint firstAttribute="width" constant="316" id="B3n-v6-lBC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="316" id="WNA-ye-9Wi"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Estilos"/>
+                                    <segment title="Catalogo"/>
+                                    <segment title="Productos"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="6O5-42-b8m"/>
+                                        <exclude reference="7PI-TZ-Ylr"/>
+                                        <exclude reference="B3n-v6-lBC"/>
+                                        <exclude reference="WNA-ye-9Wi"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="6O5-42-b8m"/>
+                                        <include reference="7PI-TZ-Ylr"/>
+                                        <include reference="B3n-v6-lBC"/>
+                                        <include reference="WNA-ye-9Wi"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="SegmentValueChanged:" destination="d0k-Bt-JoE" eventType="valueChanged" id="qpi-Kt-nA0"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YN7-z7-umk" firstAttribute="leading" secondItem="34W-T8-gQ7" secondAttribute="leadingMargin" constant="13" id="B0w-KK-5oA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YN7-z7-umk" secondAttribute="trailing" constant="14" id="BFM-2h-RaA"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="bottom" secondItem="ear-nc-vp8" secondAttribute="bottom" id="BTb-ro-wQX"/>
+                            <constraint firstAttribute="bottom" secondItem="vZY-sR-ck4" secondAttribute="bottom" id="DMB-zc-s0G"/>
+                            <constraint firstItem="YN7-z7-umk" firstAttribute="top" secondItem="pS3-2S-ugL" secondAttribute="bottom" constant="12" id="Snb-Sd-gLF"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="top" secondItem="ear-nc-vp8" secondAttribute="top" id="Tg7-x2-pVW"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="bottom" secondItem="0q1-rZ-Kbg" secondAttribute="bottom" id="Yzo-xT-UKz"/>
+                            <constraint firstItem="r4N-YZ-1mg" firstAttribute="top" secondItem="YN7-z7-umk" secondAttribute="bottom" constant="514" id="ewY-N2-i1A"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="trailing" secondItem="ear-nc-vp8" secondAttribute="trailing" id="gHB-sh-xPl"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="top" secondItem="0q1-rZ-Kbg" secondAttribute="top" id="h1H-U6-5x5"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="trailing" secondItem="0q1-rZ-Kbg" secondAttribute="trailing" id="j5H-f9-7T3"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="top" secondItem="34W-T8-gQ7" secondAttribute="top" id="oHT-ek-otX"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="leading" secondItem="34W-T8-gQ7" secondAttribute="leading" id="pjn-wv-Ncp"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="leading" secondItem="ear-nc-vp8" secondAttribute="leading" id="uFQ-JV-97z"/>
+                            <constraint firstItem="vZY-sR-ck4" firstAttribute="leading" secondItem="0q1-rZ-Kbg" secondAttribute="leading" id="umz-vx-u53"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ear-nc-vp8"/>
+                                <exclude reference="0q1-rZ-Kbg"/>
+                                <exclude reference="vZY-sR-ck4"/>
+                                <exclude reference="YN7-z7-umk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="BTb-ro-wQX"/>
+                                <exclude reference="DMB-zc-s0G"/>
+                                <exclude reference="Tg7-x2-pVW"/>
+                                <exclude reference="Yzo-xT-UKz"/>
+                                <exclude reference="gHB-sh-xPl"/>
+                                <exclude reference="h1H-U6-5x5"/>
+                                <exclude reference="j5H-f9-7T3"/>
+                                <exclude reference="oHT-ek-otX"/>
+                                <exclude reference="pjn-wv-Ncp"/>
+                                <exclude reference="uFQ-JV-97z"/>
+                                <exclude reference="umz-vx-u53"/>
+                                <exclude reference="B0w-KK-5oA"/>
+                                <exclude reference="BFM-2h-RaA"/>
+                                <exclude reference="Snb-Sd-gLF"/>
+                                <exclude reference="ewY-N2-i1A"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ear-nc-vp8"/>
+                                <include reference="0q1-rZ-Kbg"/>
+                                <include reference="vZY-sR-ck4"/>
+                                <include reference="YN7-z7-umk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="BTb-ro-wQX"/>
+                                <include reference="DMB-zc-s0G"/>
+                                <include reference="Tg7-x2-pVW"/>
+                                <include reference="Yzo-xT-UKz"/>
+                                <include reference="gHB-sh-xPl"/>
+                                <include reference="h1H-U6-5x5"/>
+                                <include reference="j5H-f9-7T3"/>
+                                <include reference="oHT-ek-otX"/>
+                                <include reference="pjn-wv-Ncp"/>
+                                <include reference="uFQ-JV-97z"/>
+                                <include reference="umz-vx-u53"/>
+                                <include reference="B0w-KK-5oA"/>
+                                <include reference="BFM-2h-RaA"/>
+                                <include reference="Snb-Sd-gLF"/>
+                                <include reference="ewY-N2-i1A"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="nOr-bQ-TLA"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="CatalogOptions" destination="0q1-rZ-Kbg" id="B6Y-IZ-dp8"/>
+                        <outlet property="ProductsView" destination="vZY-sR-ck4" id="bjS-si-L79"/>
+                        <outlet property="SegmentController" destination="YN7-z7-umk" id="Uh6-4v-ScN"/>
+                        <outlet property="StyleView" destination="ear-nc-vp8" id="3G7-xb-Dhy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csO-DL-sSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2822.25" y="-796.5"/>
+            <point key="canvasLocation" x="4881.75" y="-796.5"/>
         </scene>
         <!--Modifica Logo Slogan-->
         <scene sceneID="ZnJ-Ah-e4u">

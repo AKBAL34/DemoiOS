@@ -14,6 +14,25 @@
 @end
 
 @implementation OptionsMenu
+@synthesize StyleView;
+@synthesize CatalogOptions;
+/*
+@synthesize CatalogOptionOneView;
+@synthesize CatalogOptionTwoView;
+@synthesize CatalogOptionThreeView;
+@synthesize CatalogOptionFourView;
+@synthesize CatalogOptionFiveView;
+ 
+ */
+@synthesize ProductsView;
+
+
+
+-(void)viewDidAppear:(BOOL)animated{
+
+    self.tabBarController.tabBar.hidden=true;
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,4 +54,28 @@
 }
 */
 
+- (IBAction)SegmentValueChanged:(UISegmentedControl *)sender {
+  switch (sender.selectedSegmentIndex) {
+        case 0:
+            self.StyleView.hidden=false;
+            self.CatalogOptions.hidden=true;
+            self.ProductsView.hidden=true;
+            break;
+            
+        case 1:
+            self.StyleView.hidden=true;
+            self.CatalogOptions.hidden=false;
+            self.ProductsView.hidden=true;
+            break;
+            
+        case 2:
+            self.StyleView.hidden=true;
+            self.CatalogOptions.hidden=true;
+            self.ProductsView.hidden=false;
+            break;
+            
+        default:
+            break;
+    }
+}
 @end
