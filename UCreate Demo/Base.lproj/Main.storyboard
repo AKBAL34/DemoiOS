@@ -172,7 +172,7 @@
                                     <rect key="frame" x="156" y="362" width="63" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="pCt-3R-TTC" kind="push" id="gtK-6n-bA2"/>
+                                    <segue destination="d0k-Bt-JoE" kind="push" id="q7U-9L-SHt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,6 +201,25 @@
                 <swipeGestureRecognizer direction="left" id="55Z-r7-b8Z"/>
             </objects>
             <point key="canvasLocation" x="2129.25" y="-796.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mrp-hY-FdZ">
+            <objects>
+                <viewController id="d0k-Bt-JoE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pS3-2S-ugL"/>
+                        <viewControllerLayoutGuide type="bottom" id="r4N-YZ-1mg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="34W-T8-gQ7">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nOr-bQ-TLA"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="csO-DL-sSE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2822.25" y="-796.5"/>
         </scene>
         <!--Modifica Logo Slogan-->
         <scene sceneID="ZnJ-Ah-e4u">
@@ -256,11 +275,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="hOA-6Q-jW2">
-                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="5ps-jd-f1I">
-                            <connections>
-                                <segue destination="FJb-mT-DQX" kind="push" id="T5H-TA-7Qe"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="5ps-jd-f1I"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -292,27 +307,7 @@
                 </tapGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="hM4-jg-hO3"/>
             </objects>
-            <point key="canvasLocation" x="2825.25" y="-796.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="6Wz-gZ-WnE">
-            <objects>
-                <viewController id="FJb-mT-DQX" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cUs-ff-EXz"/>
-                        <viewControllerLayoutGuide type="bottom" id="jrY-9a-tb6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TJK-vc-hY8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kOJ-UT-czM"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5sz-dT-NK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3512.25" y="-796.5"/>
+            <point key="canvasLocation" x="2933.25" y="107.5"/>
         </scene>
     </scenes>
     <resources>
