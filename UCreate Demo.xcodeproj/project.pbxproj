@@ -16,6 +16,7 @@
 		48D8A51C1B06B8D80068B074 /* UCreate_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D8A51B1B06B8D80068B074 /* UCreate_DemoTests.m */; };
 		48DB4E271B289933002DA9DA /* logoandtitlecontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DB4E261B289933002DA9DA /* logoandtitlecontroller.m */; };
 		48DFDA4A1B2892900000F9E3 /* solologo.png in Resources */ = {isa = PBXBuildFile; fileRef = 48DFDA491B2892900000F9E3 /* solologo.png */; };
+		48E19DD51B2B365500EB8AC1 /* OptionsMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E19DD41B2B365500EB8AC1 /* OptionsMenu.m */; };
 		48E311911B274826002F1152 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E311901B274826002F1152 /* logo.png */; };
 		48E311931B274C7B002F1152 /* About-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E311921B274C7B002F1152 /* About-50.png */; };
 		48E311961B274C87002F1152 /* Bookmark-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E311941B274C87002F1152 /* Bookmark-50.png */; };
@@ -50,6 +51,8 @@
 		48DB4E251B289933002DA9DA /* logoandtitlecontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logoandtitlecontroller.h; sourceTree = "<group>"; };
 		48DB4E261B289933002DA9DA /* logoandtitlecontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = logoandtitlecontroller.m; sourceTree = "<group>"; };
 		48DFDA491B2892900000F9E3 /* solologo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solologo.png; sourceTree = "<group>"; };
+		48E19DD31B2B365500EB8AC1 /* OptionsMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMenu.h; sourceTree = "<group>"; };
+		48E19DD41B2B365500EB8AC1 /* OptionsMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMenu.m; sourceTree = "<group>"; };
 		48E311901B274826002F1152 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		48E311921B274C7B002F1152 /* About-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "About-50.png"; sourceTree = "<group>"; };
 		48E311941B274C87002F1152 /* Bookmark-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bookmark-50.png"; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 			children = (
 				48D8A5031B06B8D80068B074 /* AppDelegate.h */,
 				48D8A5041B06B8D80068B074 /* AppDelegate.m */,
+				48E19DD31B2B365500EB8AC1 /* OptionsMenu.h */,
+				48E19DD41B2B365500EB8AC1 /* OptionsMenu.m */,
 				48D8A5061B06B8D80068B074 /* ViewController.h */,
 				48D8A5071B06B8D80068B074 /* ViewController.m */,
 				48DB4E251B289933002DA9DA /* logoandtitlecontroller.h */,
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E311CF1B2752BD002F1152 /* modificaLogoSlogan.m in Sources */,
+				48E19DD51B2B365500EB8AC1 /* OptionsMenu.m in Sources */,
 				48D8A5081B06B8D80068B074 /* ViewController.m in Sources */,
 				48D8A5051B06B8D80068B074 /* AppDelegate.m in Sources */,
 				48D8A5021B06B8D80068B074 /* main.m in Sources */,

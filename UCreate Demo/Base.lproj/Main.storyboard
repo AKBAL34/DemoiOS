@@ -202,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="2129.25" y="-796.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Options Menu-->
         <scene sceneID="Mrp-hY-FdZ">
             <objects>
-                <viewController id="d0k-Bt-JoE" sceneMemberID="viewController">
+                <viewController id="d0k-Bt-JoE" customClass="OptionsMenu" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pS3-2S-ugL"/>
                         <viewControllerLayoutGuide type="bottom" id="r4N-YZ-1mg"/>
