@@ -22,6 +22,11 @@
 		48E311961B274C87002F1152 /* Bookmark-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E311941B274C87002F1152 /* Bookmark-50.png */; };
 		48E311971B274C87002F1152 /* Folder-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 48E311951B274C87002F1152 /* Folder-50.png */; };
 		48E311CF1B2752BD002F1152 /* modificaLogoSlogan.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E311CE1B2752BD002F1152 /* modificaLogoSlogan.m */; };
+		48F03DD91B31CDE8002008F3 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F03DD41B31CDE8002008F3 /* 1.png */; };
+		48F03DDA1B31CDE8002008F3 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F03DD51B31CDE8002008F3 /* 2.png */; };
+		48F03DDB1B31CDE8002008F3 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F03DD61B31CDE8002008F3 /* 3.png */; };
+		48F03DDC1B31CDE8002008F3 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F03DD71B31CDE8002008F3 /* 4.png */; };
+		48F03DDD1B31CDE8002008F3 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 48F03DD81B31CDE8002008F3 /* 5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		48E311951B274C87002F1152 /* Folder-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Folder-50.png"; sourceTree = "<group>"; };
 		48E311CD1B2752BD002F1152 /* modificaLogoSlogan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modificaLogoSlogan.h; sourceTree = "<group>"; };
 		48E311CE1B2752BD002F1152 /* modificaLogoSlogan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modificaLogoSlogan.m; sourceTree = "<group>"; };
+		48F03DD41B31CDE8002008F3 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		48F03DD51B31CDE8002008F3 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		48F03DD61B31CDE8002008F3 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		48F03DD71B31CDE8002008F3 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		48F03DD81B31CDE8002008F3 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +131,11 @@
 		48D8A4FF1B06B8D80068B074 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48F03DD41B31CDE8002008F3 /* 1.png */,
+				48F03DD51B31CDE8002008F3 /* 2.png */,
+				48F03DD61B31CDE8002008F3 /* 3.png */,
+				48F03DD71B31CDE8002008F3 /* 4.png */,
+				48F03DD81B31CDE8002008F3 /* 5.png */,
 				48E311901B274826002F1152 /* logo.png */,
 				48DFDA491B2892900000F9E3 /* solologo.png */,
 				48E311941B274C87002F1152 /* Bookmark-50.png */,
@@ -229,14 +244,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48F03DDA1B31CDE8002008F3 /* 2.png in Resources */,
 				48E311911B274826002F1152 /* logo.png in Resources */,
+				48F03DDD1B31CDE8002008F3 /* 5.png in Resources */,
 				48D8A50B1B06B8D80068B074 /* Main.storyboard in Resources */,
 				48E311961B274C87002F1152 /* Bookmark-50.png in Resources */,
+				48F03DDC1B31CDE8002008F3 /* 4.png in Resources */,
 				48D8A5101B06B8D80068B074 /* LaunchScreen.xib in Resources */,
 				48E311931B274C7B002F1152 /* About-50.png in Resources */,
 				48DFDA4A1B2892900000F9E3 /* solologo.png in Resources */,
 				48E311971B274C87002F1152 /* Folder-50.png in Resources */,
+				48F03DD91B31CDE8002008F3 /* 1.png in Resources */,
 				48D8A50D1B06B8D80068B074 /* Images.xcassets in Resources */,
+				48F03DDB1B31CDE8002008F3 /* 3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

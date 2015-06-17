@@ -25,6 +25,8 @@
  
  */
 @synthesize ProductsView;
+@synthesize pageControl;
+@synthesize scroller;
 
 
 
@@ -37,6 +39,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+for(int i=1; i<6;i++){
+    UIImageView *image= [[UIImageView alloc]initWithImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d.png",i]]];
+    image.frame=CGRectMake((i-1)*374, 104, 374,600);
+    [scroller addSubview:image];
+
+}
+    
+    scroller.contentSize= CGSizeMake(374*5, 600);
+    scroller.pagingEnabled=YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {

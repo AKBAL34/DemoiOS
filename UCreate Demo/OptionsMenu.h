@@ -8,11 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OptionsMenu : UIViewController
+@interface OptionsMenu : UIViewController{
+
+    UIPageControl * pageControl;
+    UIScrollView * scroller;
+}
 @property (weak, nonatomic) IBOutlet UIView *StyleView;
 @property (weak, nonatomic) IBOutlet UIView *CatalogOptions;
 @property (weak, nonatomic) IBOutlet UIView *ProductsView;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *SegmentController;
+
+@property IBOutlet UIPageControl * pageControl;
+@property IBOutlet UIScrollView * scroller;
+
 - (IBAction)SegmentValueChanged:(id)sender;
 
 
