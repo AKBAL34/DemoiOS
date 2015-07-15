@@ -8,20 +8,90 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OptionsMenu : UIViewController{
+#import "InfColorPickerController.h"
+#import "personalizedCatalogoDemo.h"
 
-    UIPageControl * pageControl;
-    UIScrollView * scroller;
+@interface OptionsMenu : UIViewController <UIScrollViewDelegate, UIImagePickerControllerDelegate, UIActionSheetDelegate>{
+
 }
+@property(strong,nonatomic)UITextField * alertTextField;
+
 @property (weak, nonatomic) IBOutlet UIView *StyleView;
 @property (weak, nonatomic) IBOutlet UIView *CatalogOptions;
 @property (weak, nonatomic) IBOutlet UIView *ProductsView;
+
+
+@property (weak, nonatomic) IBOutlet UIView *catalogOptionOneView;
+
+@property (weak, nonatomic) IBOutlet UIView *catalogOptionTwoView;
+@property (weak, nonatomic) IBOutlet UIView *catalogOptionThreeView;
+@property (weak, nonatomic) IBOutlet UIView *catalogOptionFourView;
+@property (weak, nonatomic) IBOutlet UIView *catalogOptionFiveView;
+
+
+// catalogOptionOne View
+@property (weak, nonatomic) IBOutlet UILabel *label1;
+@property (weak, nonatomic) IBOutlet UIImageView *logo1;
+
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel1;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView1;
+
+
+// catalogOptionTwo View
+@property (weak, nonatomic) IBOutlet UILabel *label2;
+@property (weak, nonatomic) IBOutlet UIImageView *logo2;
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel2;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView2;
+
+
+// catalogOptionThree View
+@property (weak, nonatomic) IBOutlet UILabel *label3;
+@property (weak, nonatomic) IBOutlet UIImageView *laogo3;
+@property (weak, nonatomic) IBOutlet UILabel *optionThreecategoy1;
+@property (weak, nonatomic) IBOutlet UILabel *optionThreecategoy2;
+
+@property (weak, nonatomic) IBOutlet UILabel *optionThreecategoy3;
+
+@property (weak, nonatomic) IBOutlet UILabel *optionThreecategoy4;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView3;
+
+// catalogOptionFour View
+@property (weak, nonatomic) IBOutlet UILabel *label4;
+@property (weak, nonatomic) IBOutlet UIImageView *logo4;
+@property (weak, nonatomic) IBOutlet UILabel *optionFourcategoy1;
+
+@property (weak, nonatomic) IBOutlet UILabel *optionFourcategoy2;
+@property (weak, nonatomic) IBOutlet UILabel *optionFourcategoy3;
+@property (weak, nonatomic) IBOutlet UILabel *optionFourcategoy4;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView4;
+
+// catalogOptionFive View
+
+@property (weak, nonatomic) IBOutlet UILabel *label5;
+
+@property (weak, nonatomic) IBOutlet UIImageView *logo5;
+
+
+
+
+- (IBAction)selectStyleAndPreview:(id)sender;
+- (IBAction)goBackToStyles:(id)sender;
+
+- (IBAction)goForwardToProducts:(id)sender;
+
+- (IBAction)goBackToCatalogOptions:(id)sender;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *SegmentController;
 
 @property IBOutlet UIPageControl * pageControl;
 @property IBOutlet UIScrollView * scroller;
 
 - (IBAction)SegmentValueChanged:(id)sender;
+
+
+- (IBAction)changebackgroundColor:(id)sender;
+
+- (IBAction)labelActions:(id)sender;
+
 
 
 @end
