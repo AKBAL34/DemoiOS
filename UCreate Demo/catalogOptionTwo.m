@@ -8,13 +8,17 @@
 
 #import "catalogOptionTwo.h"
 #import "customCell.h"
+#import "itemDescriptionViewController.h"
 
 @interface catalogOptionTwo ()
 
 @end
 
 @implementation catalogOptionTwo{
-NSMutableArray  * array;
+    NSMutableArray  * descriptionArray;
+    NSMutableArray  * imageArray;
+    NSMutableArray  * priceArray;
+    NSIndexPath *row;
 }
 
 - (void)viewDidLoad {
@@ -23,22 +27,15 @@ NSMutableArray  * array;
     [[self collectionView]setDataSource:self];
     [[self collectionView]setDelegate:self];
     
-    array = [[NSMutableArray alloc]init];
     
-    [array addObject:@"item 1"];
-    [array addObject:@"item 2"];
-    [array addObject:@"item 3"];
-    [array addObject:@"item 4"];
-    [array addObject:@"item 5"];
-    [array addObject:@"item 6"];
-    [array addObject:@"item 7"];
-    [array addObject:@"item 8"];
-    [array addObject:@"item 9"];
-    [array addObject:@"item 10"];
-    [array addObject:@"item 11"];
-    [array addObject:@"item 12"];
-    [array addObject:@"item 13"];
-    [array addObject:@"item 14"];
+    descriptionArray = [[NSMutableArray alloc]initWithObjects:@"item 1",@"item 2",@"item 3",
+                        @"item 4",@"item 5",@"item 6",@"item 7",@"item 8",@"item 9",nil];
+    
+    imageArray= [[NSMutableArray alloc]initWithObjects:@"solologo.png",@"solologo.png",
+                 @"solologo.png",@"solologo.png",@"solologo.png",@"solologo.png",@"solologo.png",
+                 @"solologo.png",@"solologo.png",nil];
+    priceArray=[[NSMutableArray alloc]initWithObjects:@"Q9.99",@"Q9.99", @"Q9.99",
+                @"Q9.99", @"Q9.99", @"Q9.99", @"Q9.99", @"Q9.99", @"Q9.99", nil] ;;
     
     
     NSLog(@"el valor de categorylabel1 es %@",self.categoryLabelText);
@@ -76,7 +73,7 @@ NSMutableArray  * array;
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
     
-    return [array count];
+    return [descriptionArray count];
     
     
     
@@ -86,9 +83,10 @@ NSMutableArray  * array;
     
     
     customCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell2" forIndexPath:indexPath];
-    [[cell itemDescriptionLabel]setText:[array objectAtIndex:indexPath.item]];
-    
+    [[cell itemDescriptionLabel]setText:[descriptionArray objectAtIndex:indexPath.item]];
+    [[cell itemPriceLabel]setText:[priceArray objectAtIndex:indexPath.item]];
     [[cell itemDescriptionLabel]setTextColor:self.cellTextColor];
+    [[cell itemPriceLabel]setTextColor:self.cellPriceTextColor];
     
     return cell;
     
@@ -98,6 +96,60 @@ NSMutableArray  * array;
     
     
 }
+
+
+- (void)collectionView:(UICollectionView *)collectionView
+didHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSLog(@"ESTO VA PRIMERO");
+    NSLog(@"indexPath dentro de selector %@",indexPath);
+    
+    NSLog(@"Numero de item IndePath dentro de selector %ld",(long)[indexPath item]);
+    
+    row = indexPath;
+    
+    
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    
+    if ([[segue identifier ] isEqualToString: @"detailViewController"]) {
+        
+        itemDescriptionViewController* descriptionView= segue.destinationViewController;
+        
+        //     NSIndexPath *myIndex = [self.collectionView indexPathForCell:cell];
+        
+        //      int row = [myIndex item];
+        
+        descriptionView.cellTitle=descriptionArray[[row item]];
+        descriptionView.cellPrice=priceArray[[row item]];
+        
+        descriptionView.itemDescriptionState=self.itemDescriptionState;
+        descriptionView.ratingState= self.ratingState;
+        descriptionView.priceButtonState= self.priceButtonState;
+        descriptionView.ExtraImagesStates= self.ExtraImagesStates;
+        
+        descriptionView.BackgroundColor=self.collectionViewBackgroundColor;
+        descriptionView.cellTextColor=self.cellTextColor;
+        descriptionView.cellPriceColor=self.cellPriceTextColor;
+        
+        
+        NSLog(@"la informacion de myIndex es %@",row);
+        
+        NSLog(@"El numero de item es %@",row);
+        //     NSLog(@"El titulo de este item es %@",array[row]);
+        
+        NSLog(@"El titulo es %@",descriptionView.cellTitle);
+        
+        
+    }
+    
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

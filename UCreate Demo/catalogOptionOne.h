@@ -22,7 +22,11 @@
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
-@property (weak, nonatomic) IBOutlet UIView *view;
+@property (strong, nonatomic) IBOutlet UIView *view;
+
+
+
+
 
 
 
@@ -31,6 +35,7 @@
 @property(strong,nonatomic)UIColor * LabelTextColor;
 @property(strong,nonatomic)UIColor * LabelBackgroundColor;
 @property(strong,nonatomic)UIColor * cellTextColor;
+@property(strong,nonatomic)UIColor * cellPriceTextColor;
 @property(strong,nonatomic)UIColor * collectionViewBackgroundColor;
 @property(strong,nonatomic)NSString* LabelText;
 @property(strong,nonatomic)UIColor * categoryLabelBackgroundColor;
@@ -38,5 +43,13 @@
 // Propiedades especificas para catalogos con una categoria
 
 @property(strong,nonatomic)NSString* categoryLabelText;
+
+
+
+//Variables de Productos
+@property(strong,nonatomic)NSString* itemDescriptionState;
+@property(strong,nonatomic)NSString* ratingState;
+@property(strong,nonatomic)NSString* priceButtonState;
+@property(strong,nonatomic)NSString* ExtraImagesStates;
 
 @end

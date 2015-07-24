@@ -30,6 +30,7 @@
 @property(strong,nonatomic)UIColor * LabelTextColor;
 @property(strong,nonatomic)UIColor * LabelBackgroundColor;
 @property(strong,nonatomic)UIColor * cellTextColor;
+@property(strong,nonatomic)UIColor * cellPriceTextColor;
 @property(strong,nonatomic)UIColor * collectionViewBackgroundColor;
 @property(strong,nonatomic)NSString* LabelText;
 @property(strong,nonatomic)UIColor * categoryLabelBackgroundColor;
@@ -45,6 +46,12 @@
 @property(strong,nonatomic)NSString* categoryLabel2Text;
 @property(strong,nonatomic)NSString* categoryLabel3Text;
 @property(strong,nonatomic)NSString* categoryLabel4Text;
+
+//Variables de Productos
+@property(strong,nonatomic)NSString* itemDescriptionState;
+@property(strong,nonatomic)NSString* ratingState;
+@property(strong,nonatomic)NSString* priceButtonState;
+@property(strong,nonatomic)NSString* ExtraImagesStates;
 
 
 

@@ -104,6 +104,7 @@
     myDestination1.LabelTextColor=self.LabelTextColor;
     myDestination1.LabelBackgroundColor=self.LabelBackgroundColor;
     myDestination1.cellTextColor=self.cellTextColor;
+    myDestination1.cellPriceTextColor=self.cellPriceTextColor;
     myDestination1.collectionViewBackgroundColor=self.collectionViewBackgroundColor;
     
     myDestination1.LabelText=self.LabelText;
@@ -111,6 +112,18 @@
     myDestination1.categoryLabelTextColor=self.categoryLabelTextColor;
     
     myDestination1.categoryLabelText=self.categoryLabelText;
+        
+        
+        myDestination1.itemDescriptionState=self.itemDescriptionState;
+        myDestination1.ratingState= self.ratingState;
+        myDestination1.priceButtonState= self.priceButtonState;
+        myDestination1.ExtraImagesStates= self.ExtraImagesStates;
+        
+        
+      
+        myDestination1.cellTextColor=self.cellTextColor;
+        myDestination1.cellPriceTextColor=self.cellPriceTextColor;
+        
     
     }
     else if ([[segue identifier ] isEqualToString: @"catalogOptionTwo"]){
@@ -125,6 +138,7 @@
         myDestination1.LabelTextColor=self.LabelTextColor;
         myDestination1.LabelBackgroundColor=self.LabelBackgroundColor;
         myDestination1.cellTextColor=self.cellTextColor;
+        myDestination1.cellPriceTextColor=self.cellPriceTextColor;
         myDestination1.collectionViewBackgroundColor=self.collectionViewBackgroundColor;
         
         myDestination1.LabelText=self.LabelText;
@@ -132,6 +146,14 @@
         myDestination1.categoryLabelTextColor=self.categoryLabelTextColor;
         
         myDestination1.categoryLabelText=self.categoryLabelText;
+        
+        myDestination1.itemDescriptionState=self.itemDescriptionState;
+        myDestination1.ratingState= self.ratingState;
+        myDestination1.priceButtonState= self.priceButtonState;
+        myDestination1.ExtraImagesStates= self.ExtraImagesStates;
+        
+        myDestination1.cellTextColor=self.cellTextColor;
+        myDestination1.cellPriceTextColor=self.cellPriceTextColor;
     
     
     }
@@ -147,6 +169,7 @@
         myDestination1.LabelTextColor=self.LabelTextColor;
         myDestination1.LabelBackgroundColor=self.LabelBackgroundColor;
         myDestination1.cellTextColor=self.cellTextColor;
+        myDestination1.cellPriceTextColor=self.cellPriceTextColor;
         myDestination1.collectionViewBackgroundColor=self.collectionViewBackgroundColor;
         
         myDestination1.LabelText=self.LabelText;
@@ -157,6 +180,14 @@
         myDestination1.categoryLabel2Text=self.categoryLabel2Text;
         myDestination1.categoryLabel3Text=self.categoryLabel3Text;
         myDestination1.categoryLabel4Text=self.categoryLabel4Text;
+        
+        myDestination1.itemDescriptionState=self.itemDescriptionState;
+        myDestination1.ratingState= self.ratingState;
+        myDestination1.priceButtonState= self.priceButtonState;
+        myDestination1.ExtraImagesStates= self.ExtraImagesStates;
+        
+        myDestination1.cellTextColor=self.cellTextColor;
+        myDestination1.cellPriceTextColor=self.cellPriceTextColor;
         
     }
     
@@ -172,6 +203,7 @@
         myDestination1.LabelTextColor=self.LabelTextColor;
         myDestination1.LabelBackgroundColor=self.LabelBackgroundColor;
         myDestination1.cellTextColor=self.cellTextColor;
+        myDestination1.cellPriceTextColor=self.cellPriceTextColor;
         myDestination1.collectionViewBackgroundColor=self.collectionViewBackgroundColor;
         
         myDestination1.LabelText=self.LabelText;
@@ -183,6 +215,13 @@
         myDestination1.categoryLabel3Text=self.categoryLabel3Text;
         myDestination1.categoryLabel4Text=self.categoryLabel4Text;
         
+        myDestination1.itemDescriptionState=self.itemDescriptionState;
+        myDestination1.ratingState= self.ratingState;
+        myDestination1.priceButtonState= self.priceButtonState;
+        myDestination1.ExtraImagesStates= self.ExtraImagesStates;
+        
+        myDestination1.cellTextColor=self.cellTextColor;
+        myDestination1.cellPriceTextColor=self.cellPriceTextColor;
         
     }
     

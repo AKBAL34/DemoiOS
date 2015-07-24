@@ -93,7 +93,7 @@ static void HSVFromUIColor(UIColor* color, float* h, float* s, float* v)
 	self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
 	
 	if (self) {
-		self.navigationItem.title = NSLocalizedString(@"Set Color",
+		self.navigationItem.title = NSLocalizedString(@"Seleccionar Color",
 		                                              @"InfColorPicker default nav item title");
 	}
 	
@@ -106,11 +106,11 @@ static void HSVFromUIColor(UIColor* color, float* h, float* s, float* v)
 {
 	UINavigationController* nav = [[InfColorPickerNavigationController alloc] initWithRootViewController: self];
 	
-	nav.navigationBar.barStyle = UIBarStyleBlackOpaque;
-	
-	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem: UIBarButtonSystemItemDone
-																						   target: self
-																						   action: @selector(done:)];
+	nav.navigationBar.barStyle = UIBarStyleDefault;
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Listo" style:UIBarButtonItemStylePlain target:self action:@selector(done:)];
+
 	
 	[controller presentViewController: nav animated: YES completion: nil];
 }

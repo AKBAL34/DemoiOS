@@ -10,5 +10,13 @@
 
 @interface customCell : UICollectionViewCell
 
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property (weak, nonatomic) IBOutlet UILabel *itemDescriptionLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *itemPriceLabel;
+
+
+
 @end

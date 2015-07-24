@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIView *catalogOptionFourView;
 @property (weak, nonatomic) IBOutlet UIView *catalogOptionFiveView;
 
+@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 
 // catalogOptionOne View
 @property (weak, nonatomic) IBOutlet UILabel *label1;
@@ -72,7 +73,27 @@
 @property (weak, nonatomic) IBOutlet UIImageView *logo5;
 
 
+// Product View
 
+@property (strong, nonatomic) IBOutlet UIView *productBackgroundFrame;
+
+@property (weak, nonatomic) IBOutlet UIView *productBackground;
+
+@property (weak, nonatomic) IBOutlet UIImageView *ratingView;
+
+@property (weak, nonatomic) IBOutlet UILabel *descriptionTitle;
+
+@property (weak, nonatomic) IBOutlet UITextView *descriptionBody;
+
+@property (weak, nonatomic) IBOutlet UIView *priceView;
+
+@property (weak, nonatomic) IBOutlet UIButton *priceButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *productTitle;
+
+@property (strong, nonatomic) IBOutlet UICollectionView *imageCollectionView;
+
+//Actions
 
 - (IBAction)selectStyleAndPreview:(id)sender;
 - (IBAction)goBackToStyles:(id)sender;
