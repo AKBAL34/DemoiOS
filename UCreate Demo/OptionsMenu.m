@@ -681,10 +681,15 @@ for(int i=1; i<6;i++){
 
 - (IBAction)changebackgroundColor:(id)sender {
     
+    
+    
+ //   if ([sender view].tag==10) {
+        
+    
 
     NSLog(@"Hola como estas");
-    
-    NSLog(@"esto es un %@",sender);
+        NSLog(@"El valor de tag es %ld",(long)(((UIGestureRecognizer*)sender).view.tag));
+  //  NSLog(@"esto es un %@",sender);
     InfColorPickerController* picker = [InfColorPickerController colorPickerViewController];
   
     accion=0;
@@ -720,6 +725,7 @@ for(int i=1; i<6;i++){
     picker.delegate = self;
     
     [picker presentModallyOverViewController: self];
+   // }
 }
 
 

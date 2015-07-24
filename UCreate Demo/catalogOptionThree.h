@@ -59,6 +59,12 @@
 @property(strong,nonatomic)NSString* ExtraImagesStates;
 
 
+//Acciones
+
+
+- (IBAction)changeShownCategory:(id)sender;
+
+
 
 
 @end

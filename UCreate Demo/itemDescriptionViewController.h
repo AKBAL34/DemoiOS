@@ -46,6 +46,7 @@
 @property(strong,nonatomic)NSString* cellPrice;
 @property(strong,nonatomic)NSString* priceString;
 @property(strong,nonatomic)NSString* rating;
+@property(strong,nonatomic)NSString* imageName;
 
 
 //Variables de Productos

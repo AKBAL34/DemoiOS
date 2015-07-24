@@ -524,6 +524,8 @@
                                     </scrollView>
                                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="VpX-76-Lp8">
                                         <rect key="frame" x="-19" y="-18" width="39" height="37"/>
+                                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="0.0" y="630" width="375" height="37"/>
                                         </variation>
@@ -546,7 +548,7 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0q1-rZ-Kbg" userLabel="CatalogOptions">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5r-6K-vKE" userLabel="opcionCatalogo 1">
+                                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5r-6K-vKE" userLabel="opcionCatalogo 1">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCreate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI9-AQ-RXY">
@@ -681,7 +683,7 @@
                                             <outletCollection property="gestureRecognizers" destination="smb-Ws-7VE" appends="YES" id="Rwy-9s-MTI"/>
                                         </connections>
                                     </view>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCQ-p4-gv1" userLabel="opcionCatalogo 2">
+                                    <view hidden="YES" tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCQ-p4-gv1" userLabel="opcionCatalogo 2">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCreate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1Y-Nc-4z3">
@@ -812,7 +814,7 @@
                                             <outletCollection property="gestureRecognizers" destination="smb-Ws-7VE" appends="YES" id="S12-d7-P4U"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDe-5k-yub" userLabel="opcionCatalogo 3">
+                                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDe-5k-yub" userLabel="opcionCatalogo 3">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCreate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj4-fO-lHc">
@@ -988,7 +990,7 @@
                                             <outletCollection property="gestureRecognizers" destination="smb-Ws-7VE" appends="YES" id="2NT-2L-59g"/>
                                         </connections>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-zN-B01" userLabel="opcionCatalogo 4">
+                                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bu-zN-B01" userLabel="opcionCatalogo 4">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCreate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdu-6L-fR6" userLabel="UCreate">
@@ -1164,7 +1166,7 @@
                                             <outletCollection property="gestureRecognizers" destination="smb-Ws-7VE" appends="YES" id="Ahf-56-jk6"/>
                                         </connections>
                                     </view>
-                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-tq-pyo" userLabel="opcionCatalogo 5">
+                                    <view hidden="YES" tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-tq-pyo" userLabel="opcionCatalogo 5">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UCreate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTh-OW-xQu">
@@ -1818,41 +1820,57 @@
                                             <rect key="frame" x="8" y="88" width="72" height="70"/>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKP-MN-c22">
+                                    <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKP-MN-c22">
                                         <rect key="frame" x="9" y="231" width="89" height="71"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="9" y="203" width="89" height="71"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="YAS-sy-aKy" appends="YES" id="b7g-wM-ehu"/>
+                                        </connections>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqL-a3-9dd">
+                                    <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqL-a3-9dd">
                                         <rect key="frame" x="9" y="331" width="89" height="71"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="9" y="303" width="89" height="71"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="JCh-c1-zEx" appends="YES" id="dzd-Lv-Zy7"/>
+                                        </connections>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKr-ML-jBa">
+                                    <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKr-ML-jBa">
                                         <rect key="frame" x="8" y="431" width="89" height="71"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="8" y="403" width="89" height="71"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="ha9-Dy-QVf" appends="YES" id="78k-GT-hZP"/>
+                                        </connections>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oym-eu-hr8">
+                                    <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oym-eu-hr8">
                                         <rect key="frame" x="9" y="531" width="89" height="71"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="9" y="503" width="89" height="71"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="P9E-Tb-SuR" appends="YES" id="qrR-9f-spB"/>
+                                        </connections>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Y0Y-vj-th5">
                                         <rect key="frame" x="106" y="204" width="269" height="463"/>
@@ -1910,6 +1928,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
+                                                    <outlet property="imageView" destination="Tz6-Gy-mx4" id="emK-DU-x4X"/>
                                                     <outlet property="itemDescriptionLabel" destination="1Hq-nE-gz4" id="6cL-cO-Ipt"/>
                                                     <outlet property="itemPriceLabel" destination="ZAe-s3-55r" id="Pj1-Ac-pJX"/>
                                                     <segue destination="Sm2-Qp-LkS" kind="push" identifier="detailViewController" id="EkL-Ph-KYR"/>
@@ -1982,6 +2001,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eh9-vO-xrb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="YAS-sy-aKy">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="aGN-mX-zGT" id="bdH-pb-clK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="JCh-c1-zEx">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="aGN-mX-zGT" id="cwT-cs-GDO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ha9-Dy-QVf">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="aGN-mX-zGT" id="4fG-I3-4U4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="P9E-Tb-SuR">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="aGN-mX-zGT" id="gwp-AJ-UBo"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6300.75" y="78.5"/>
         </scene>
@@ -2437,16 +2476,20 @@
                                             <rect key="frame" x="8" y="91" width="68" height="70"/>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iA-60-9EO">
+                                    <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iA-60-9EO">
                                         <rect key="frame" x="0.0" y="231" width="90" height="40"/>
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="0.0" y="169" width="90" height="40"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Jtx-AQ-2An" appends="YES" id="tUP-fR-UOx"/>
+                                        </connections>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOs-ct-DE8" userLabel="Categoria 2">
+                                    <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOs-ct-DE8" userLabel="Categoria 2">
                                         <rect key="frame" x="93" y="231" width="90" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2454,8 +2497,11 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="93" y="169" width="90" height="40"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="3Op-Ld-5cc" appends="YES" id="3O0-R0-ZzP"/>
+                                        </connections>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd2-Jy-oby">
+                                    <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jd2-Jy-oby">
                                         <rect key="frame" x="186" y="231" width="90" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2463,8 +2509,11 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="186" y="169" width="90" height="40"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="twl-4W-qtr" appends="YES" id="ry1-pf-19N"/>
+                                        </connections>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgO-5q-6tV">
+                                    <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgO-5q-6tV">
                                         <rect key="frame" x="279" y="231" width="90" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -2472,6 +2521,9 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="279" y="169" width="90" height="40"/>
                                         </variation>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="2M7-lx-7EI" appends="YES" id="vrD-72-s3p"/>
+                                        </connections>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MYh-sh-8nL">
                                         <rect key="frame" x="0.0" y="269" width="374" height="398"/>
@@ -2530,6 +2582,7 @@
                                                     </mask>
                                                 </variation>
                                                 <connections>
+                                                    <outlet property="imageView" destination="Gen-hL-vRO" id="ard-NU-lZW"/>
                                                     <outlet property="itemDescriptionLabel" destination="itF-zu-jZt" id="iMR-AK-oj4"/>
                                                     <outlet property="itemPriceLabel" destination="58x-if-O7X" id="6jn-gQ-vQW"/>
                                                     <segue destination="Sm2-Qp-LkS" kind="push" identifier="detailViewController" id="Sef-3N-4v0"/>
@@ -2602,6 +2655,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Knp-eP-QoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jtx-AQ-2An">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="rR1-aq-ya1" id="tZ9-YV-E3E"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="3Op-Ld-5cc">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="rR1-aq-ya1" id="WRK-Cl-MjR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="twl-4W-qtr">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="rR1-aq-ya1" id="82f-K7-mCV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="2M7-lx-7EI">
+                    <connections>
+                        <action selector="changeShownCategory:" destination="rR1-aq-ya1" id="mbW-1L-adR"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="6641.25" y="-631.5"/>
         </scene>
@@ -2862,6 +2935,6 @@
         <image name="solologo.png" width="561" height="592"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dgA-pH-5z2"/>
+        <segue reference="EkL-Ph-KYR"/>
     </inferredMetricsTieBreakers>
 </document>

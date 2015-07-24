@@ -135,6 +135,7 @@ didHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
         
   //      int row = [myIndex item];
         
+        descriptionView.imageName=imageArray[[row item]];
         descriptionView.cellTitle=descriptionArray[[row item]];
         descriptionView.cellPrice=priceArray[[row item]];
         

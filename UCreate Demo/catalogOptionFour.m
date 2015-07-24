@@ -1,20 +1,20 @@
 //
-//  CatalogOptionThree.m
+//  CatalogOptionFour.m
 //  UCreate Demo
 //
 //  Created by AKBAL34 on 7/7/15.
 //  Copyright (c) 2015 AKBAL34. All rights reserved.
 //
 
-#import "catalogOptionThree.h"
-
+#import "CatalogOptionFour.h"
 #import "customCell.h"
 #import "itemDescriptionViewController.h"
-@interface catalogOptionThree ()
+
+@interface CatalogOptionFour ()
 
 @end
 
-@implementation catalogOptionThree{
+@implementation CatalogOptionFour{
     NSMutableArray  * descriptionArray;
     NSMutableArray  * imageArray;
     NSMutableArray  * descriptionArray2;
@@ -45,23 +45,23 @@
                  @"solologo.png",@"solologo.png",nil];
     
     descriptionArray2 = [[NSMutableArray alloc]initWithObjects:@"item 11",@"item 12",@"item 13",
-                        @"item 14",@"item 15",@"item 16",@"item 17",@"item 18",@"item 19",nil];
+                         @"item 14",@"item 15",@"item 16",@"item 17",@"item 18",@"item 19",nil];
     
     imageArray2= [[NSMutableArray alloc]initWithObjects:@"solologo1.png",@"solologo1.png",
-                 @"solologo1.png",@"solologo1.png",@"solologo1.png",@"solologo1.png",@"solologo1.png",
-                 @"solologo1.png",@"solologo1.png",nil];
+                  @"solologo1.png",@"solologo1.png",@"solologo1.png",@"solologo1.png",@"solologo1.png",
+                  @"solologo1.png",@"solologo1.png",nil];
     descriptionArray3 = [[NSMutableArray alloc]initWithObjects:@"item 21",@"item 22",@"item 23",
-                        @"item 24",@"item 25",@"item 26",@"item 27",@"item 28",@"item 29",nil];
+                         @"item 24",@"item 25",@"item 26",@"item 27",@"item 28",@"item 29",nil];
     
     imageArray3= [[NSMutableArray alloc]initWithObjects:@"solologo2.png",@"solologo2.png",
-                 @"solologo2.png",@"solologo2.png",@"solologo2.png",@"solologo2.png",@"solologo2.png",
-                 @"solologo2.png",@"solologo2.png",nil];
+                  @"solologo2.png",@"solologo2.png",@"solologo2.png",@"solologo2.png",@"solologo2.png",
+                  @"solologo2.png",@"solologo2.png",nil];
     descriptionArray4 = [[NSMutableArray alloc]initWithObjects:@"item 31",@"item 32",@"item 33",
-                        @"item 34",@"item 35",@"item 36",@"item 37",@"item 38",@"item 39",nil];
+                         @"item 34",@"item 35",@"item 36",@"item 37",@"item 38",@"item 39",nil];
     
     imageArray4= [[NSMutableArray alloc]initWithObjects:@"solologo3.png",@"solologo3.png",
-                 @"solologo3.png",@"solologo3.png",@"solologo3.png",@"solologo3.png",@"solologo3.png",
-                 @"solologo3.png",@"solologo3.png",nil];
+                  @"solologo3.png",@"solologo3.png",@"solologo3.png",@"solologo3.png",@"solologo3.png",
+                  @"solologo3.png",@"solologo3.png",nil];
     priceArray=[[NSMutableArray alloc]initWithObjects:@"Q9.99",@"Q9.99", @"Q9.99",
                 @"Q9.99", @"Q9.99", @"Q9.99", @"Q9.99", @"Q9.99", @"Q9.99", nil] ;
     
@@ -121,7 +121,7 @@
 -(UICollectionViewCell  *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    customCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell3" forIndexPath:indexPath];
+    customCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell4" forIndexPath:indexPath];
     
     switch (selectedCategory) {
         case 1:
@@ -255,19 +255,17 @@ didHighlightItemAtIndexPath:(NSIndexPath *)indexPath{
     }
     else if ((((UIGestureRecognizer*)sender).view.tag)==2){
         selectedCategory=2;
-         [self.collectionView reloadData];
+        [self.collectionView reloadData];
     }
     else if ((((UIGestureRecognizer*)sender).view.tag)==3){
         selectedCategory=3;
-         [self.collectionView reloadData];
+        [self.collectionView reloadData];
     }
     else if ((((UIGestureRecognizer*)sender).view.tag)==4){
         selectedCategory=4;
-         [self.collectionView reloadData];
+        [self.collectionView reloadData];
     }
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

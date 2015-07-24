@@ -50,7 +50,7 @@
     self.detailViewDescription.textColor=self.cellTextColor;
     self.detailPlusImageDescriptionTitle.textColor=self.cellTextColor;
     self.detailPlusImageViewDescription.textColor=self.cellTextColor;
-    
+    self.image.image=[UIImage imageNamed:self.imageName];
     self.priceButtonView.backgroundColor=self.cellPriceColor;
     
     [self.priceButton setBackgroundColor:self.BackgroundColor];

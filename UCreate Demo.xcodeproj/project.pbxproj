@@ -17,6 +17,9 @@
 		48D608A61B45A56C00D2A38F /* fondo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D608A11B45A56C00D2A38F /* fondo5.png */; };
 		48D608A71B45A56C00D2A38F /* fondo6.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D608A21B45A56C00D2A38F /* fondo6.png */; };
 		48D608A91B45A59B00D2A38F /* fondo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D608A81B45A59B00D2A38F /* fondo1.png */; };
+		48D6A8941B62D03500B43D79 /* solologo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D6A8911B62D03500B43D79 /* solologo1.png */; };
+		48D6A8951B62D03500B43D79 /* solologo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D6A8921B62D03500B43D79 /* solologo2.png */; };
+		48D6A8961B62D03500B43D79 /* solologo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D6A8931B62D03500B43D79 /* solologo3.png */; };
 		48D6C3051B4C38140026798F /* catalogOptionTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D6C3041B4C38140026798F /* catalogOptionTwo.m */; };
 		48D6C3081B4C382C0026798F /* catalogOptionThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D6C3071B4C382C0026798F /* catalogOptionThree.m */; };
 		48D6C30B1B4C38510026798F /* catalogOptionFour.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D6C30A1B4C38510026798F /* catalogOptionFour.m */; };
@@ -77,6 +80,9 @@
 		48D608A11B45A56C00D2A38F /* fondo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo5.png; sourceTree = "<group>"; };
 		48D608A21B45A56C00D2A38F /* fondo6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo6.png; sourceTree = "<group>"; };
 		48D608A81B45A59B00D2A38F /* fondo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo1.png; sourceTree = "<group>"; };
+		48D6A8911B62D03500B43D79 /* solologo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solologo1.png; sourceTree = "<group>"; };
+		48D6A8921B62D03500B43D79 /* solologo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solologo2.png; sourceTree = "<group>"; };
+		48D6A8931B62D03500B43D79 /* solologo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = solologo3.png; sourceTree = "<group>"; };
 		48D6C3031B4C38140026798F /* catalogOptionTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogOptionTwo.h; sourceTree = "<group>"; };
 		48D6C3041B4C38140026798F /* catalogOptionTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = catalogOptionTwo.m; sourceTree = "<group>"; };
 		48D6C3061B4C382C0026798F /* catalogOptionThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = catalogOptionThree.h; sourceTree = "<group>"; };
@@ -253,6 +259,9 @@
 				48F03DD81B31CDE8002008F3 /* 5.png */,
 				48E311901B274826002F1152 /* logo.png */,
 				48DFDA491B2892900000F9E3 /* solologo.png */,
+				48D6A8911B62D03500B43D79 /* solologo1.png */,
+				48D6A8921B62D03500B43D79 /* solologo2.png */,
+				48D6A8931B62D03500B43D79 /* solologo3.png */,
 				48E311941B274C87002F1152 /* Bookmark-50.png */,
 				48E311951B274C87002F1152 /* Folder-50.png */,
 				48E311921B274C7B002F1152 /* About-50.png */,
@@ -360,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D6C3141B4C458A0026798F /* Main.storyboard in Resources */,
+				48D6A8961B62D03500B43D79 /* solologo3.png in Resources */,
 				48E7D9C71B3DEA0A00F94C76 /* InfColorPickerView.xib in Resources */,
 				48F03DDA1B31CDE8002008F3 /* 2.png in Resources */,
 				48D608A31B45A56C00D2A38F /* fondo2.png in Resources */,
@@ -374,8 +384,10 @@
 				48D608A51B45A56C00D2A38F /* fondo4.png in Resources */,
 				48DFDA4A1B2892900000F9E3 /* solologo.png in Resources */,
 				48D608A71B45A56C00D2A38F /* fondo6.png in Resources */,
+				48D6A8941B62D03500B43D79 /* solologo1.png in Resources */,
 				48E311971B274C87002F1152 /* Folder-50.png in Resources */,
 				48F03DD91B31CDE8002008F3 /* 1.png in Resources */,
+				48D6A8951B62D03500B43D79 /* solologo2.png in Resources */,
 				48D8A50D1B06B8D80068B074 /* Images.xcassets in Resources */,
 				48D608A41B45A56C00D2A38F /* fondo3.png in Resources */,
 				48D608A91B45A59B00D2A38F /* fondo1.png in Resources */,
